@@ -1,0 +1,7 @@
+{
+  "svelte.language-server.ls-path": "./Finlux B2B SaaS/node_modules/svelte-language-server",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.svelte-kit": true
+  }
+}
