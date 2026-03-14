@@ -1,0 +1,73 @@
+/* Global chart styling for LayerChart components */
+
+/* Axis styling */
+:global(.chart .axis) {
+	color: #9aa6b2;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+:global(.chart .axis text) {
+	fill: #9aa6b2;
+}
+
+:global(.chart .axis line),
+:global(.chart .axis path) {
+	stroke: #1f2630;
+}
+
+/* Grid lines */
+:global(.chart .grid line) {
+	stroke: #1f2630;
+	stroke-opacity: 0.5;
+}
+
+/* Tooltips */
+:global(.chart .tooltip) {
+	pointer-events: none;
+}
+
+/* Highlight lines */
+:global(.chart .highlight line) {
+	stroke: #00ffa3;
+	stroke-opacity: 0.5;
+}
+
+/* Interactive elements */
+:global(.chart .interactive) {
+	cursor: pointer;
+	transition: all 150ms ease;
+}
+
+:global(.chart .interactive:hover) {
+	opacity: 0.8;
+}
+
+/* Focus states for accessibility */
+:global(.chart .interactive:focus) {
+	outline: 2px solid rgba(0, 255, 163, 0.5);
+	outline-offset: 2px;
+}
+
+/* Animation */
+:global(.chart [data-animated='true']) {
+	animation: chart-fade-in 400ms ease-out;
+}
+
+@keyframes chart-fade-in {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/* Responsive chart containers */
+@media (max-width: 768px) {
+	:global(.chart .axis) {
+		font-size: 10px;
+	}
+}

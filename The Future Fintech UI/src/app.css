@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	
+	body {
+		@apply bg-background text-text-primary;
+		font-variant-numeric: tabular-nums;
+	}
+}
+
+@layer utilities {
+	.text-glow {
+		text-shadow: 0 0 20px rgba(0, 255, 163, 0.3);
+	}
+	
+	.border-glow {
+		border-color: rgba(0, 255, 163, 0.25);
+		box-shadow: 0 0 20px rgba(0, 255, 163, 0.12);
+	}
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
