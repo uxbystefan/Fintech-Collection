@@ -124,7 +124,7 @@ style="animation: fade-up 0.65s ease 0.38s forwards; opacity: 0;"
 <img
 src={logo.src}
 alt={logo.alt}
-class="h-7 w-auto cursor-default select-none transition-all duration-300"
+			class="h-8 w-auto cursor-default select-none transition-all duration-300"
 style="
   filter: {hoveredLogo === i ? 'none' : 'grayscale(1) brightness(1.6)'};
   opacity: {hoveredLogo === i ? 1 : 0.38};
