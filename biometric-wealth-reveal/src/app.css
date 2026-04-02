@@ -1,0 +1,55 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+	--bg: #0B0B0F;
+	--surface: #111118;
+	--surface-light: #1A1A24;
+	--cyan: #45D6EF;
+	--cyan-dim: rgba(69, 214, 239, 0.4);
+	--cyan-border: rgba(69, 214, 239, 0.1);
+	--cyan-glow: rgba(69, 214, 239, 0.15);
+	--text-primary: #E8ECF1;
+	--text-secondary: #8A92A0;
+	--text-muted: #555B68;
+	--positive: #34D399;
+	--negative: #F87171;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #060608;
+	color: var(--text-primary);
+	font-family: 'Inter', system-ui, -apple-system, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Tabular numbers for finance */
+.font-tabular {
+	font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 4px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--cyan-border);
+	border-radius: 2px;
+}
